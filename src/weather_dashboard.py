@@ -71,9 +71,12 @@ def main():
     dashboard = WeatherDashboard()
 
     dashboard.create_bucket()
-    
-    cities = ["Washington D.C", "Texas", "New York"]
-    
+    count_cities = input("Enter cities separated by commas: ")
+    cities = [city for city in count_cities.split(',')]
+    print(cities)
+        
+    #cities = ["Washington D.C", "Texas", "New York"]
+
     for city in cities:
         print(f"\nFetching weather for {city}...")
         weather_data = dashboard.fetch_weather(city)
