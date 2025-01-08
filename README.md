@@ -45,7 +45,7 @@ Libraries - boto3, urlib, requests, dot-env
     ```
 5. **Run the script**:
     ```
-     pyhton src/weather_dashboard.py
+     python src/weather_dashboard.py
     ```
 6. **Enter City names for which you want to store the weather in S3**:
 
